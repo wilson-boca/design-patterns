@@ -1,0 +1,3 @@
+
+class Singleton(object):
+    pass
