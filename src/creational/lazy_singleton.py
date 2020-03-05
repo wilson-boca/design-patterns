@@ -5,7 +5,7 @@ class Singleton(object):
         if not Singleton.__instance:
             print('init called without instance')
         else:
-            print('Instance properly created...')
+            print('Instance properly created...', self.get_instance())
 
     @classmethod
     def get_instance(cls):
@@ -15,9 +15,5 @@ class Singleton(object):
 
 
 s0 = Singleton()
-print(s0.get_instance())
-s1 = Singleton()
-print(s1.get_instance())
 Singleton.get_instance()
-print(s0.get_instance())
-print(s1.get_instance())
+s1 = Singleton()
